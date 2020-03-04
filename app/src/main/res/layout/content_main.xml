@@ -11,9 +11,10 @@
         android:id="@+id/button_with_callable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="Rx using callable"
+        android:layout_marginTop="88dp"
+        android:text="Retrofit callable gitusercount"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,17 +22,16 @@
         android:id="@+id/button_with_rx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:text="Retrofit using Rxjava"
+        android:layout_marginTop="48dp"
+        android:text="Retrofit-Rx-WeatherDetail"
         app:layout_constraintStart_toStartOf="@id/button_with_callable"
         app:layout_constraintTop_toBottomOf="@+id/button_with_callable" />
-
 
     <Button
         android:id="@+id/button_with_coroutine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         android:text="Retrofit using coroutine"
         app:layout_constraintStart_toStartOf="@id/button_with_rx"
         app:layout_constraintTop_toBottomOf="@+id/button_with_rx" />
@@ -40,25 +40,25 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:hint="Fetch content will show here"
-        app:layout_constraintBottom_toTopOf="@+id/button_with_callable"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/button_with_coroutine" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
         android:ems="10"
+        android:hint="Git user name for callable example"
         android:inputType="textPersonName"
-        android:hind="Git user name here"
-        app:layout_constraintEnd_toEndOf="@+id/button_with_coroutine"
-        app:layout_constraintTop_toBottomOf="@+id/button_with_coroutine" />
+        app:layout_constraintBottom_toTopOf="@+id/button_with_callable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
